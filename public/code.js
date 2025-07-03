@@ -35,6 +35,10 @@ import { greenEffect } from './text-animation/green-effect.js';
 import { numberCount } from './text-animation/number-count.js';
 import { titles } from './text-animation/titles.js';
 
+import { copyright } from './copyright.js';
+import { datefromto } from './date-from-to.js';
+import { filters } from './filters.js';
+
 
 
 backgroundBlue();
@@ -74,3 +78,7 @@ tabshomeSecurity();
 greenEffect();
 numberCount();
 titles();
+
+copyright();
+datefromto();
+filters();

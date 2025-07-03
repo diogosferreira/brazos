@@ -1,4 +1,10 @@
-$(document).ready(function () {
+export function datefromto() {
+  console.log("datefromto");
+
+
+  const element = document.querySelector(".from-to-wrapper");
+  if (!element) return;
+
   let $wrapper = $(".from-to-wrapper");
   let $from = $wrapper.find("div[date-from]");
   let $to = $wrapper.find("div[date-to]");
@@ -30,4 +36,4 @@ $(document).ready(function () {
       }
     }
   }
-});
+}
