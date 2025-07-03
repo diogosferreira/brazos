@@ -2,7 +2,7 @@ export function tabshomeSecurity() {
   console.log("tabshomeSecurity");
 
 
-  const element = document.querySelector("security-tab-content");
+  const element = document.querySelector(".security-tab-content");
   if (!element) return;
 
 
