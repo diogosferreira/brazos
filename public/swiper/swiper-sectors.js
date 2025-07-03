@@ -1,0 +1,63 @@
+/*document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".swiper-sector", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    speed: 700,
+    freeMode: true,
+    grabCursor: true,
+    navigation: {
+      nextEl: ".sectors-next-arrow",
+      prevEl: ".sectors-prev-arrow",
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      draggable: true,
+      dragSize: 2,
+      hide: false,
+    },
+    on: {
+      slideChange: function () {
+        this.el.style.cursor = "grab"; // Ensure grab cursor remains after arrow click
+      },
+      touchStart: function () {
+        this.el.style.cursor = "grabbing";
+      },
+      touchEnd: function () {
+        this.el.style.cursor = "grab";
+      },
+    },
+  });
+});
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".swiper-sector", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    speed: 700,
+    freeMode: true,
+    grabCursor: false, // ✅ Disable grab cursor
+    allowTouchMove: false, // ✅ Disable touch gestures
+    simulateTouch: false, // ✅ Disable simulated touch interactions
+    navigation: {
+      nextEl: ".sectors-next-arrow",
+      prevEl: ".sectors-prev-arrow",
+    },
+    breakpoints: {
+      0: {
+        spaceBetween: 16,
+        slidesPerView: 1,
+      },
+      999: {
+        spaceBetween: 20,
+        slidesPerView: 4,
+      },
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      draggable: true,
+      dragSize: 2,
+      hide: false,
+    },
+  });
+});
