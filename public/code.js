@@ -9,7 +9,7 @@ import { contryStates } from './forms/countries-states.js';
 import { formSubmit } from './forms/form-submit.js';
 import { signUp } from './forms/signup-submit-button.js';
 import { technicalGuide } from './forms/technical-guide-submit-button.js';
-import { technicalGuide } from './integrations/integrations-tabs.js';
+import { integrationsTabs } from './integrations/integrations-tabs.js';
 
 
 
