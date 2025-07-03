@@ -11,6 +11,7 @@ import { signUp } from './forms/signup-submit-button.js';
 import { technicalGuide } from './forms/technical-guide-submit-button.js';
 import { integrationsTabs } from './integrations/integrations-tabs.js';
 import { loader } from './loaders/other-pages.js';
+import { marqueeFOQA } from './marquee/marquee-foqa.js';
 
 
 
@@ -27,3 +28,4 @@ signUp();
 technicalGuide();
 integrationsTabs();
 loader();
+marqueeFOQA();

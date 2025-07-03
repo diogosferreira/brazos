@@ -1,4 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function marqueeFOQA() {
+  console.log("marqueeFOQA");
+
+
+  const element = document.querySelector(".marquee-foqa");
+  if (!element) return;
+
+
+
+
   let tlmar = gsap.timeline({ repeat: -1 });
 
   tlmar.fromTo(
@@ -12,4 +22,4 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "none",
     }
   );
-});
+}
