@@ -15,6 +15,8 @@ import { marqueeFOQA } from './marquee/marquee-foqa.js';
 import { marqueeTeam } from './marquee/marquee-team.js';
 import { marqueeTrustedBy } from './marquee/marquee-trusted-by.js';
 import { marqueeTrusted } from './marquee/marquee-trusted.js';
+import { menuDropdown } from './menu/menu-dropdowns.js';
+import { menu } from './menu/menu.js';
 
 
 
@@ -36,3 +38,5 @@ marqueeFOQA();
 marqueeTeam();
 marqueeTrustedBy();
 marqueeTrusted();
+menuDropdown();
+menu();

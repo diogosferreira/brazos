@@ -1,4 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function menu() {
+  console.log("menu");
+
+
+
+
+
+
   ScrollTrigger.create({
     start: "top top",
     end: 99999,
@@ -46,4 +54,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
   });
-});
+}

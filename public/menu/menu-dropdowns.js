@@ -1,4 +1,8 @@
-$(document).ready(function () {
+export function menuDropdown() {
+  console.log("menuDropdown");
+
+
+
   if ($(window).width() > 991) {
     function updateNavBackground() {
       let $openDropdowns = $(".menu-dropdown-toggle.w--open");
@@ -90,4 +94,4 @@ $(document).ready(function () {
       }
     });
   }
-});
+}
