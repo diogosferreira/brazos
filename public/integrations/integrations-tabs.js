@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function integrationsTabs() {
+  console.log("integrationsTabs");
+
+
+  const element = document.querySelector(".hardware_wrapper");
+  if (!element) return;
+
+
+
   $("[data-hardware-tab-content]").on("click", function () {
     console.log("hard");
     $(".hardware_wrapper").css("display", "block");
@@ -14,4 +23,4 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".integration-link").removeClass("is-active");
     $(this).addClass("is-active");
   });
-});
+}
