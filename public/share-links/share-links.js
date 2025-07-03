@@ -1,4 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function shareLinks() {
+  console.log("shareLinks");
+
+
+  const element = document.querySelector("[copy-link-button]");
+  if (!element) return;
+
+
+
+
+
   const copyButton = document.querySelector("[copy-link-button]");
 
   copyButton.addEventListener("click", function () {
@@ -45,4 +56,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Open the LinkedIn share URL in a new tab
     window.open(linkedinShareURL, "_blank");
   });
-});
+}

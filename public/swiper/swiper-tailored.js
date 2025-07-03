@@ -1,4 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function swiperTailored() {
+  console.log("swiperTailored");
+
+
+  const element = document.querySelector(".swiper-tailored");
+  if (!element) return;
+
+
   var swiper_base = new Swiper(".swiper-tailored", {
     slidesPerView: 1,
     speed: 700,
@@ -45,4 +53,4 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-});
+}

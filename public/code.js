@@ -17,6 +17,16 @@ import { marqueeTrustedBy } from './marquee/marquee-trusted-by.js';
 import { marqueeTrusted } from './marquee/marquee-trusted.js';
 import { menuDropdown } from './menu/menu-dropdowns.js';
 import { menu } from './menu/menu.js';
+import { shareLinks } from './share-links/share-links.js';
+
+import { swiperAnalitics } from './swiper/analytics-features.js';
+import { swiperHomeFeatured } from './swiper/swiper-home-featured.js';
+import { swiperMainFeatures } from './swiper/swiper-main-features.js';
+import { swiperSectors } from './swiper/swiper-sectors.js';
+import { swiperStandards } from './swiper/swiper-standards.js';
+import { swiperTailored } from './swiper/swiper-tailored.js';
+import { swiperTestimonialsCarrers } from './swiper/swiper-testimonials-careers.js';
+import { swiperTestimonials } from './swiper/swiper-testimonials.js';
 
 
 
@@ -40,3 +50,13 @@ marqueeTrustedBy();
 marqueeTrusted();
 menuDropdown();
 menu();
+
+shareLinks();
+swiperAnalitics();
+swiperHomeFeatured();
+swiperMainFeatures();
+swiperSectors();
+swiperStandards();
+swiperTailored();
+swiperTestimonialsCarrers();
+swiperTestimonials();

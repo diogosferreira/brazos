@@ -1,36 +1,12 @@
-/*document.addEventListener("DOMContentLoaded", function () {
-  var swiper = new Swiper(".swiper-sector", {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    speed: 700,
-    freeMode: true,
-    grabCursor: true,
-    navigation: {
-      nextEl: ".sectors-next-arrow",
-      prevEl: ".sectors-prev-arrow",
-    },
-    scrollbar: {
-      el: ".swiper-scrollbar",
-      draggable: true,
-      dragSize: 2,
-      hide: false,
-    },
-    on: {
-      slideChange: function () {
-        this.el.style.cursor = "grab"; // Ensure grab cursor remains after arrow click
-      },
-      touchStart: function () {
-        this.el.style.cursor = "grabbing";
-      },
-      touchEnd: function () {
-        this.el.style.cursor = "grab";
-      },
-    },
-  });
-});
-*/
 
-document.addEventListener("DOMContentLoaded", function () {
+export function swiperSectors() {
+  console.log("swiperSectors");
+
+
+  const element = document.querySelector(".swiper-sector");
+  if (!element) return;
+
+
   var swiper = new Swiper(".swiper-sector", {
     slidesPerView: 4,
     spaceBetween: 20,
@@ -60,4 +36,4 @@ document.addEventListener("DOMContentLoaded", function () {
       hide: false,
     },
   });
-});
+}

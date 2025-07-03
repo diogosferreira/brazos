@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function swiperMainFeatures() {
+  console.log("swiperMainFeatures");
+
+
+  const element = document.querySelector(".swiper-main-features");
+  if (!element) return;
+
+
+
   // Initialize Swiper
   var swiper_base = new Swiper(".swiper-main-features", {
     slidesPerView: 1,
@@ -42,4 +51,4 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-});
+}

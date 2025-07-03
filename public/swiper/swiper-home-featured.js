@@ -1,4 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function swiperHomeFeatured() {
+  console.log("swiperHomeFeatured");
+
+
+  const element = document.querySelector(".swiper-home-featured");
+  if (!element) return;
+
+
+
+
+
   if ($(window).width() < 991) {
     var swiper_base = new Swiper(".swiper-home-featured", {
       slidesPerView: 1,
@@ -42,4 +52,4 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
-});
+}

@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function swiperTestimonials() {
+  console.log("swiperTestimonials");
+
+
+  const element = document.querySelector(".section_home-testimonials");
+  if (!element) return;
+
+
+
   var swiper_base = new Swiper(".swiper-testimonials", {
     slidesPerView: 1,
     speed: 700,
@@ -44,4 +53,4 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-});
+}

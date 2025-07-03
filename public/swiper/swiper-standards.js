@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function swiperStandards() {
+  console.log("swiperStandards");
+
+
+  const element = document.querySelector(".swiper-standards");
+  if (!element) return;
+
+
+
   var swiper_base = new Swiper(".swiper-standards", {
     slidesPerView: 2,
     speed: 700,
@@ -58,4 +67,4 @@ document.addEventListener("DOMContentLoaded", function () {
       slide.style.opacity = index === swiper.activeIndex ? "1" : "0.7";
     });
   }
-});
+}

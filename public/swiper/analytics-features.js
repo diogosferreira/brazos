@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function swiperAnalitics() {
+  console.log("swiperAnalitics");
+
+
+  const element = document.querySelector(".swiper-analytics-features");
+  if (!element) return;
+
+
+
+
   // AUTO SCROLL ANIMATION
   function initAnimation() {
     var swiper_base = new Swiper(".swiper-analytics-features", {
@@ -48,4 +57,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Run on resize to reapply if needed
   window.addEventListener("resize", checkScreenSize);
-});
+}
