@@ -10,6 +10,7 @@ import { formSubmit } from './forms/form-submit.js';
 import { signUp } from './forms/signup-submit-button.js';
 import { technicalGuide } from './forms/technical-guide-submit-button.js';
 import { integrationsTabs } from './integrations/integrations-tabs.js';
+import { loader } from './loaders/other-pages.js';
 
 
 
@@ -25,3 +26,4 @@ formSubmit();
 signUp();
 technicalGuide();
 integrationsTabs();
+loader();
