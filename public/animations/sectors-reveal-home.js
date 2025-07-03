@@ -1,8 +1,8 @@
 export function sectors() {
+  console.log("sectors");
   const element = document.querySelector(".section_sectors");
   if (!element) return;
 
-  console.log("sectors");
 
   gsap.fromTo(
     ".section_sectors",

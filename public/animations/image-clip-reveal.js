@@ -1,9 +1,11 @@
 
 export function imageClip() {
+  console.log("image-clip");
+
+
   const element = document.querySelector("[image-clip-animation]");
   if (!element) return;
 
-  console.log("image-clip");
 
 
   $("[image-clip-animation]").each(function () {

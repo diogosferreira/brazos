@@ -1,8 +1,8 @@
 export function tabsEnter() {
+  console.log("tabsEnter");
   const element = document.querySelector("[data-tab-enter-from-right]");
   if (!element) return;
 
-  console.log("tabsEnter");
 
 
 

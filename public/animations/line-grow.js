@@ -1,8 +1,8 @@
 export function lineGrow() {
+  console.log("line grow");
   const element = document.querySelector("[line-grow-animation]");
   if (!element) return;
 
-  console.log("line grow");
 
   $("[line-grow-animation]").each(function () {
     let triggerElement = $(this);
