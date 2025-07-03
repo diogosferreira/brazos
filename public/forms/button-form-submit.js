@@ -1,4 +1,15 @@
-$(document).ready(function () {
+
+export function formButtonSubmit() {
+  console.log("forms");
+
+
+  const element = document.querySelector(".form-submit-button");
+  if (!element) return;
+
+
+
+
+
   const formInputs = $(
     "#wf-form-Form input, #wf-form-Form textarea, #wf-form-Form select"
   );
@@ -68,4 +79,4 @@ $(document).ready(function () {
 
   // Initial check in case fields are prefilled
   validateForm();
-});
+}

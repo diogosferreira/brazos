@@ -1,4 +1,13 @@
-$(document).ready(function () {
+
+export function signUp() {
+  console.log("signUp");
+
+
+  const element = document.querySelector(".field-error");
+  if (!element) return;
+
+
+
   const formInputs = $("#wf-form-Form input").not("#Phone-Number"); // Exclude phone number
   const emailInput = $("#Email-3");
   const passwordInput = $("#Password");
@@ -54,4 +63,4 @@ $(document).ready(function () {
   });
 
   validateForm();
-});
+}
