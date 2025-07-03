@@ -1,4 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function tabsEnter() {
+  const element = document.querySelector("[data-tab-enter-from-right]");
+  if (!element) return;
+
+  console.log("tabsEnter");
+
+
+
   gsap.fromTo(
     "[data-tab-enter-from-right]",
     { x: "100%", opacity: 0 },
@@ -15,4 +22,4 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     }
   );
-});
+}

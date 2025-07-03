@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function sectors() {
+  const element = document.querySelector(".section_sectors");
+  if (!element) return;
+
+  console.log("sectors");
+
   gsap.fromTo(
     ".section_sectors",
     { y: "-100%" },
@@ -13,4 +18,5 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     }
   );
-});
+
+}

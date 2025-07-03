@@ -1,4 +1,11 @@
-$(document).ready(function () {
+
+export function imageClip() {
+  const element = document.querySelector("[image-clip-animation]");
+  if (!element) return;
+
+  console.log("image-clip");
+
+
   $("[image-clip-animation]").each(function () {
     let element = $(this);
     let borderRadius = element.css("border-radius") || "0px";
@@ -18,4 +25,4 @@ $(document).ready(function () {
       }
     );
   });
-});
+}

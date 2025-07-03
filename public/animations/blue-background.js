@@ -3,7 +3,6 @@ export function backgroundBlue() {
   const element = document.querySelector(".background-blue-crop");
   if (!element) return;
 
-  console.log("blue");
 
 
   $(".background-blue-crop").each(function () {

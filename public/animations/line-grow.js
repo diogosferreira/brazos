@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function lineGrow() {
+  const element = document.querySelector("[line-grow-animation]");
+  if (!element) return;
+
+  console.log("line grow");
+
   $("[line-grow-animation]").each(function () {
     let triggerElement = $(this);
 
@@ -36,4 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     );
   });
-});
+
+}
