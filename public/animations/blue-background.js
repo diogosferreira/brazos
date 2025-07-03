@@ -1,4 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function backgroundBlue() {
+  const element = document.querySelector(".background-blue-crop");
+  if (!element) return;
+
+  console.log("blue");
+
+
   $(".background-blue-crop").each(function () {
     let $this = $(this);
 
@@ -37,4 +44,5 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
   });
-});
+
+}
