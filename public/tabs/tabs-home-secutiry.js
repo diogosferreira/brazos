@@ -1,4 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function tabshomeSecurity() {
+  console.log("tabshomeSecurity");
+
+
+  const element = document.querySelector("security-tab-content");
+  if (!element) return;
+
+
+
   if ($(window).width() > 991) {
     const securityTabContents = document.querySelectorAll(
       ".security-tab-content"
@@ -246,4 +254,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-});
+}

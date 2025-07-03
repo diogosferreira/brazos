@@ -1,4 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function titles() {
+  console.log("titles");
+
+
+  const element = document.querySelector("[split-lines]");
+  if (!element) return;
+
   function initSplitText() {
     $("[split-lines]").each(function () {
       let textElement = $(this);
@@ -37,4 +43,4 @@ document.addEventListener("DOMContentLoaded", function () {
       { y: "0%", duration: 0.7, ease: "power2.out", stagger: { amount: 0.1 } } // Move up
     );
   });
-});
+}

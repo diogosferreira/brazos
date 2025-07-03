@@ -28,6 +28,13 @@ import { swiperTailored } from './swiper/swiper-tailored.js';
 import { swiperTestimonialsCarrers } from './swiper/swiper-testimonials-careers.js';
 import { swiperTestimonials } from './swiper/swiper-testimonials.js';
 
+import { tabsCareers } from './tabs/tabs-careers.js';
+import { tabshomeSecurity } from './tabs/tabs-home-secutiry.js';
+
+import { greenEffect } from './text-animation/green-effect.js';
+import { numberCount } from './text-animation/number-count.js';
+import { titles } from './text-animation/titles.js';
+
 
 
 backgroundBlue();
@@ -60,3 +67,10 @@ swiperStandards();
 swiperTailored();
 swiperTestimonialsCarrers();
 swiperTestimonials();
+
+tabsCareers();
+tabshomeSecurity();
+
+greenEffect();
+numberCount();
+titles();

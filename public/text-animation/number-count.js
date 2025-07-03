@@ -1,4 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function numberCount() {
+  console.log("numberCount");
+
+
+  const element = document.querySelector("[number-count]");
+  if (!element) return;
+
   $("[number-count]").each(function () {
     let target = $(this);
     let finalNumber = parseInt(target.text().replace(/\./g, ""), 10);
@@ -26,4 +32,4 @@ document.addEventListener("DOMContentLoaded", function () {
   function numberWithCommas(n) {
     return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   }
-});
+}
