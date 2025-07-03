@@ -1,4 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+export function marqueeTrustedBy() {
+  console.log("marqueeTrustedBy");
+
+
+  const element = document.querySelector(".marquee_track.is-trusted-by");
+  if (!element) return;
+
+
   let tlmar = gsap.timeline({ repeat: -1 });
 
   tlmar.fromTo(
@@ -12,4 +20,4 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "none",
     }
   );
-});
+}

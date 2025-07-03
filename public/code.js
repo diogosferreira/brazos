@@ -12,6 +12,9 @@ import { technicalGuide } from './forms/technical-guide-submit-button.js';
 import { integrationsTabs } from './integrations/integrations-tabs.js';
 import { loader } from './loaders/other-pages.js';
 import { marqueeFOQA } from './marquee/marquee-foqa.js';
+import { marqueeTeam } from './marquee/marquee-team.js';
+import { marqueeTrustedBy } from './marquee/marquee-trusted-by.js';
+import { marqueeTrusted } from './marquee/marquee-trusted.js';
 
 
 
@@ -28,4 +31,8 @@ signUp();
 technicalGuide();
 integrationsTabs();
 loader();
+
 marqueeFOQA();
+marqueeTeam();
+marqueeTrustedBy();
+marqueeTrusted();
