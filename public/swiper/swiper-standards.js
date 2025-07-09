@@ -11,9 +11,7 @@ export function swiperStandards() {
     spaceBetween: 20,
     initialSlide: 2, // ✅ Start at slide index 2
     centeredSlides: true,
-    loop: true, // ✅ Loop enabled
-    loopedSlides: document.querySelectorAll(".swiper-standards .swiper-slide")
-      .length, // ✅ Dynamically set correct loopedSlides count
+    loop: false,
     navigation: {
       nextEl: ".standards-next-arrow",
       prevEl: ".standards-prev-arrow",
