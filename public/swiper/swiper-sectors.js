@@ -1,14 +1,11 @@
 
 export function swiperSectors() {
-  console.log("swiperSectors");
-
-
   const element = document.querySelector(".swiper-sector");
   if (!element) return;
 
 
   var swiper = new Swiper(".swiper-sector", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
     speed: 700,
     freeMode: true,
@@ -26,7 +23,7 @@ export function swiperSectors() {
       },
       999: {
         spaceBetween: 20,
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     },
     scrollbar: {
