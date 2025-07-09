@@ -1,8 +1,5 @@
 
 export function swiperStandards() {
-  console.log("swiperStandards");
-
-
   const element = document.querySelector(".swiper-standards");
   if (!element) return;
 
@@ -12,6 +9,7 @@ export function swiperStandards() {
     slidesPerView: 2,
     speed: 700,
     spaceBetween: 20,
+    initialSlide: 2, // ✅ Start at slide index 2
     centeredSlides: true,
     loop: true, // ✅ Loop enabled
     loopedSlides: document.querySelectorAll(".swiper-standards .swiper-slide")
