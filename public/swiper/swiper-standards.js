@@ -9,7 +9,7 @@ export function swiperStandards() {
     slidesPerView: 2,
     speed: 700,
     spaceBetween: 20,
-    initialSlide: 2, // ✅ Start at slide index 2
+    initialSlide: 1, // ✅ Start at slide index 2
     centeredSlides: true,
     loop: false,
     navigation: {
