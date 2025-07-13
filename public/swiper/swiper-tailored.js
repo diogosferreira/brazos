@@ -1,8 +1,5 @@
 
 export function swiperTailored() {
-  console.log("swiperTailored");
-
-
   const element = document.querySelector(".swiper-tailored");
   if (!element) return;
 
@@ -53,4 +50,11 @@ export function swiperTailored() {
       },
     },
   });
+
+
+  function setSlideOpacity(swiper) {
+    swiper.slides.forEach((slide, index) => {
+      slide.style.opacity = index === swiper.activeIndex ? "1" : "0.5";
+    });
+  }
 }
